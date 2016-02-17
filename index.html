@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="path/to/favicon.png">
+    <title>Bewerbung</title>
+    <meta name="description" content="Beschreibung der Seite">
+    <meta name="keywords" content="Schlüsselwörter,für,die,Seite,kommasepariert">
+    <meta name="author" content="Tanja Joan Eiler">
+
+    <link href="bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/stylesheet.css">
+
+
+</head>
+<body>
+<script src="jquery/jquery-2.2.0.min.js"></script>
+<script src="bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+
+
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Titel und Schalter werden für eine bessere mobile Ansicht zusammengefasst -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Navigation ein-/ausblenden</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"></a>
+        </div>
+
+        <!-- Alle Navigationslinks, Formulare und anderer Inhalt werden hier zusammengefasst und können dann ein- und ausgeblendet werden -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active"><a id="link1" class="nav-section1" href="#anschreiben">Anschreiben<span class="sr-only">(aktuell)</span></a></li>
+                <li><a id="link2" class="nav-section2" href="#lebenslauf">Lebenslauf</a></li>
+                <li><a href="#">Fähigkeiten</a></li>
+                <li><a href="#">Portfolio</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Impressum</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+<div class="col-md-12 anschreiben" id="anschreiben">
+    <div class="col-md-12 inhalt_anschreiben">
+    <br><br>
+    <h3 id="hallo"><b>Hallo und herzlich Willkommen!</b></h3>
+        <br>
+        <div class="circular me" style="float: left">
+            <img src="img/Kitty.jpg" width="300px" height="300px">
+        </div>
+        <p id="haupttext" style="margin-left: 305px">Mein Name ist Tanja Joan Eiler und ich möchte mich mit dieser Website als Webentwicklerin bewerben.<br>
+            Mein Interesse für Webentwicklung entstand bereits vor einigen Jahren durch praktische Tätigkeiten in einer Werbeagentur.<br>
+            Dort habe ich viele Erfahrungen über den Umgang mit Kunden und der Webentwicklung an sich sammeln können.<br>
+            Gerne unterstütze ich Sie beim Aufbau eines Sie perfekt repräsentierenden Webauftritts.<br><br>
+        </p>
+
+        <div class="col-md-6 table-responsive">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th width="300px">Geburtsort</th>
+                    <th width="300px">Wohnort</th>
+                    <th width="300px">Hobbys</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Kirchen</td>
+                    <td>Wissen</td>
+                    <td>Musik, Gitarre, Lesen</td>
+                </tr>
+                </tbody>
+            </table>
+            <table class="table">
+                <thead>
+                <tr>
+                    <th width="300px">Geburtsjahr</th>
+                    <th width="300px">Ausbildung</th>
+                    <th width="300px">E-Mail</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1988</td>
+                    <td>Bachelor of Science</td>
+                    <td>tanja.eiler@student.uni-siegen.de</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</div>
+
+<div class="col-md-12 lebenslauf" id="lebenslauf">
+    <div class="col-md-12 inhalt_ausbildung">
+        <br><br>
+        <h2 id="h2lebenslauf"><b>Mein Lebenslauf</b></h2>
+        <br>
+
+
+
+        <div class="container">
+            <div class="page-header">
+                <h3 id="timeline">Lebenslauf</h3>
+            </div>
+            <ul class="timeline">
+                <li>
+                    <div class="timeline-badge"><i class="glyphicon glyphicon-check"></i></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4 class="timeline-title">Feld1</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Text1</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="timeline-inverted">
+                    <div class="timeline-badge warning"><i class="glyphicon glyphicon-apple"></i></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4 class="timeline-title">Feld2</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Text2</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-badge danger"><i class="glyphicon glyphicon-credit-card"></i></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4 class="timeline-title">Feld3</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Text3</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="timeline-inverted">
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4 class="timeline-title">Feld4</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Text4</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-badge info"><i class="glyphicon glyphicon-floppy-disk"></i></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4 class="timeline-title">Feld5</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Text5</p>
+                            <hr>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown">
+                                    <i class="glyphicon glyphicon-cog"></i> <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="timeline-inverted">
+                    <div class="timeline-badge success"><i class="glyphicon glyphicon-thumbs-up"></i></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4 class="timeline-title">Feld6</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Text6</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+
+
+    </div>
+
+</div>
+
+<div class="fähigkeiten">
+
+</div>
+
+<div class="portfolio">
+
+</div>
+
+
+
+<script language="javascript" type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>
