@@ -14,16 +14,17 @@
 
 
 </head>
-<body>
+<body data-spy="scroll" data-target="#myScrollspy">
 <script src="jquery/jquery-2.2.0.min.js"></script>
 <script src="bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
 
 
-<nav class="navbar navbar-default navbar-fixed-top">
+<nav class="navbar navbar-default navbar-fixed-top" id="myScrollspy">
     <div class="container-fluid">
         <!-- Titel und Schalter werden für eine bessere mobile Ansicht zusammengefasst -->
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                 <span class="sr-only">Navigation ein-/ausblenden</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -35,182 +36,255 @@
         <!-- Alle Navigationslinks, Formulare und anderer Inhalt werden hier zusammengefasst und können dann ein- und ausgeblendet werden -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li class="active"><a id="link1" class="nav-section1" href="#anschreiben">Anschreiben<span class="sr-only">(aktuell)</span></a></li>
-                <li><a id="link2" class="nav-section2" href="#lebenslauf">Lebenslauf</a></li>
-                <li><a href="#">Fähigkeiten</a></li>
-                <li><a href="#">Portfolio</a></li>
+                <li class="active"><a href="#anschreiben">Anschreiben<span
+                        class="sr-only">(aktuell)</span></a></li>
+                <li><a href="#lebenslauf">Lebenslauf</a></li>
+                <li><a href="#faehigkeiten">Fähigkeiten</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Impressum</a></li>
-                <li><a href="#">Kontakt</a></li>
+                <li><a href="#">Kontakt: 0171 - 2079904</a></li>
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
 </nav>
 
+
 <div class="col-md-12 anschreiben" id="anschreiben">
-    <div class="col-md-12 inhalt_anschreiben">
-    <br><br>
-    <h3 id="hallo"><b>Hallo und herzlich Willkommen!</b></h3>
-        <br>
-        <div class="circular me" style="float: left">
-            <img src="img/Kitty.jpg" width="300px" height="300px">
-        </div>
-        <p id="haupttext" style="margin-left: 305px">Mein Name ist Tanja Joan Eiler und ich möchte mich mit dieser Website als Webentwicklerin bewerben.<br>
-            Mein Interesse für Webentwicklung entstand bereits vor einigen Jahren durch praktische Tätigkeiten in einer Werbeagentur.<br>
-            Dort habe ich viele Erfahrungen über den Umgang mit Kunden und der Webentwicklung an sich sammeln können.<br>
-            Gerne unterstütze ich Sie beim Aufbau eines Sie perfekt repräsentierenden Webauftritts.<br><br>
-        </p>
+    <div class="col-md-offset-1 col-md-11 inhalt_anschreiben">
+        <div class="container"></div>
+        <h3 id="hallo"><b>Hey Ho, ein herzliches Willkommen und let's go!</b></h3>
+        <div class="row">
+            <div class="circular me" style="float: left">
+                <img src="img/me.png" width="300px" height="300px">
+            </div>
+            <p id="haupttext" style="margin-left: 320px">Mein Name ist Tanja Joan Eiler und ich möchte mich mit dieser
+                Website als Webentwicklerin bewerben.<br>
+                Mein Interesse für Webentwicklung entstand bereits vor einigen Jahren durch praktische Tätigkeiten in
+                einer Werbeagentur.<br>
+                Dort habe ich viele Erfahrungen über den Umgang mit Kunden und der Webentwicklung an sich sammeln
+                können.<br>
+                Gerne unterstütze ich Sie beim Aufbau eines Sie perfekt repräsentierenden Webauftritts.<br><br>
+            </p>
 
-        <div class="col-md-6 table-responsive">
-            <table class="table">
-                <thead>
-                <tr>
-                    <th width="300px">Geburtsort</th>
-                    <th width="300px">Wohnort</th>
-                    <th width="300px">Hobbys</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>Kirchen</td>
-                    <td>Wissen</td>
-                    <td>Musik, Gitarre, Lesen</td>
-                </tr>
-                </tbody>
-            </table>
-            <table class="table">
-                <thead>
-                <tr>
-                    <th width="300px">Geburtsjahr</th>
-                    <th width="300px">Ausbildung</th>
-                    <th width="300px">E-Mail</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>1988</td>
-                    <td>Bachelor of Science</td>
-                    <td>tanja.eiler@student.uni-siegen.de</td>
-                </tr>
-                </tbody>
-            </table>
+            <div class="col-md-6 table-responsive">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th width="300px">Geburtsort</th>
+                        <th width="300px">Wohnort</th>
+                        <th width="300px">Hobbys</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Kirchen</td>
+                        <td>Wissen</td>
+                        <td>Musik, Gitarre, Lesen</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th width="300px">Geburtsjahr</th>
+                        <th width="300px">Ausbildung</th>
+                        <th width="300px">E-Mail</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1988</td>
+                        <td>Bachelor of Science</td>
+                        <td>tanja.eiler@student.uni-siegen.de</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
-
     </div>
 </div>
 
 <div class="col-md-12 lebenslauf" id="lebenslauf">
-    <div class="col-md-12 inhalt_ausbildung">
-        <br><br>
+    <div class="col-md-offset-1 col-md-11 inhalt_ausbildung">
         <h2 id="h2lebenslauf"><b>Mein Lebenslauf</b></h2>
-        <br>
-
-
 
         <div class="container">
-            <div class="page-header">
-                <h3 id="timeline">Lebenslauf</h3>
-            </div>
+
             <ul class="timeline">
                 <li>
-                    <div class="timeline-badge"><i class="glyphicon glyphicon-check"></i></div>
+                    <div class="timeline-badge"><i class="glyphicon glyphicon-flag"></i></div>
                     <div class="timeline-panel">
                         <div class="timeline-heading">
-                            <h4 class="timeline-title">Feld1</h4>
+                            <h4 class="timeline-title">2008</h4>
                         </div>
                         <div class="timeline-body">
-                            <p>Text1</p>
+                            <p>Abitur am Kopernikus Gymnasium in Wissen</p>
                         </div>
                     </div>
                 </li>
                 <li class="timeline-inverted">
-                    <div class="timeline-badge warning"><i class="glyphicon glyphicon-apple"></i></div>
+                    <div class="timeline-badge success"><i class="glyphicon glyphicon-apple"></i></div>
                     <div class="timeline-panel">
                         <div class="timeline-heading">
-                            <h4 class="timeline-title">Feld2</h4>
+                            <h4 class="timeline-title">10/2008 – 04/2009</h4>
                         </div>
                         <div class="timeline-body">
-                            <p>Text2</p>
+                            <p>FSJ Ganztagsschule sowie die „Kreatives Gestalten“, „Englisch“ und „Computer“ AGs an der
+                                Franziskus Grundschule, Wissen</p>
                         </div>
                     </div>
                 </li>
                 <li>
-                    <div class="timeline-badge danger"><i class="glyphicon glyphicon-credit-card"></i></div>
+                    <div class="timeline-badge danger"><i class="glyphicon glyphicon-education"></i></div>
                     <div class="timeline-panel">
                         <div class="timeline-heading">
-                            <h4 class="timeline-title">Feld3</h4>
+                            <h4 class="timeline-title">04/2009 - 08/2010</h4>
                         </div>
                         <div class="timeline-body">
-                            <p>Text3</p>
+                            <p>Grundschullehramt-Studium an der Universität Siegen</p>
                         </div>
                     </div>
                 </li>
                 <li class="timeline-inverted">
+                    <div class="timeline-badge info"><i class="glyphicon glyphicon-cloud"></i></div>
                     <div class="timeline-panel">
                         <div class="timeline-heading">
-                            <h4 class="timeline-title">Feld4</h4>
+                            <h4 class="timeline-title">08/2010 - 10/2010</h4>
                         </div>
                         <div class="timeline-body">
-                            <p>Text4</p>
+                            <p>Praktikum in der Werbeagentur MISTRAL! marketing in Betzdorf</p>
                         </div>
                     </div>
                 </li>
                 <li>
-                    <div class="timeline-badge info"><i class="glyphicon glyphicon-floppy-disk"></i></div>
+                    <div class="timeline-badge warning"><i class="glyphicon glyphicon-book"></i></div>
                     <div class="timeline-panel">
                         <div class="timeline-heading">
-                            <h4 class="timeline-title">Feld5</h4>
+                            <h4 class="timeline-title">19/05/2011 – 24/06/2011</h4>
                         </div>
                         <div class="timeline-body">
-                            <p>Text5</p>
-                            <hr>
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown">
-                                    <i class="glyphicon glyphicon-cog"></i> <span class="caret"></span>
-                                </button>
-                                <ul class="dropdown-menu" role="menu">
-                                    <li><a href="#">Action</a></li>
-                                    <li><a href="#">Another action</a></li>
-                                    <li><a href="#">Something else here</a></li>
-                                    <li class="divider"></li>
-                                    <li><a href="#">Separated link</a></li>
-                                </ul>
-                            </div>
+                            <p>PES-Lehrkraft für Deutsch, Englisch, Mathe und Kunst, Integrierte Gesamtschule, Hamm</p>
                         </div>
                     </div>
                 </li>
                 <li class="timeline-inverted">
-                    <div class="timeline-badge success"><i class="glyphicon glyphicon-thumbs-up"></i></div>
+                    <div class="timeline-badge success"><i class="glyphicon glyphicon-leaf"></i></div>
                     <div class="timeline-panel">
                         <div class="timeline-heading">
-                            <h4 class="timeline-title">Feld6</h4>
+                            <h4 class="timeline-title">01/11/2011 – 31/08/2012</h4>
                         </div>
                         <div class="timeline-body">
-                            <p>Text6</p>
+                            <p>Arbeitsgelegenheit im Förderkindergarten, Wissen</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-badge danger"><i class="glyphicon glyphicon-education"></i></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4 class="timeline-title">seit 10/2012</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Informatik-Studium an der Universität Siegen</p>
                         </div>
                     </div>
                 </li>
             </ul>
         </div>
-
-
-
     </div>
-
 </div>
 
-<div class="fähigkeiten">
-
+<div class="col-md-12 faehigkeiten" id="faehigkeiten">
+    <div class="col-md-offset-1 col-md-11 inhalt_ausbildung">
+        <h2 id="h2faehigkeiten"><b>Meine Fähigkeiten</b></h2>
+        <!--by equipexq-->
+        <div class="container">
+            <div class="container">
+                <div class="row">
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+                            <span class="sr-only">90% Complete</span>
+                        </div>
+                        <span class="progress-type">HTML / HTML5</span>
+                        <span class="progress-completed">90%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                            <span class="sr-only">40% Complete (success)</span>
+                        </div>
+                        <span class="progress-type">Bootstrap</span>
+                        <span class="progress-completed">40%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                            <span class="sr-only">20% Complete (info)</span>
+                        </div>
+                        <span class="progress-type">JavaScript / jQuery</span>
+                        <span class="progress-completed">20%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                            <span class="sr-only">60% Complete (warning)</span>
+                        </div>
+                        <span class="progress-type">Java</span>
+                        <span class="progress-completed">60%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                            <span class="sr-only">80% Complete (danger)</span>
+                        </div>
+                        <span class="progress-type">CSS / CSS3</span>
+                        <span class="progress-completed">80%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
-<div class="portfolio">
-
+<div class="col-md-12 portfolio" id="portfolio">
+    <div class="col-md-offset-1 col-md-11 inhalt_ausbildung">
+        <h2 id="h2portfolio"><b>Portfolio</b></h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-6">
+                    <div class="thumbnail">
+                        <img src="img/test.jpg" alt="..." height="102" width="102">
+                        <div class="caption">
+                            <h3>Fiete Website</h3>
+                            <p>Die Website der Siegener Band Fiete</p><br>
+                            <p><a href="http://webdevg2.dwfb-dev.de" class="btn btn-primary" role="button">Ansehen</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                    <div class="thumbnail">
+                        <img src="img/test.jpg" alt="..." height="102" width="102">
+                        <div class="caption">
+                            <h3>PartS Website</h3>
+                            <p>Die Website zum Projekt PartS der Universität Siegen</p><br>
+                            <p><a href="#" class="btn btn-primary" role="button">Ansehen</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
+<footer class="col-md-12 footer" id="footer">
 
+    <a href="#" class="col-md-offset-5 col-md-2">Kontakt</a>
+    <a href="#" class="col-md-2">Impressum</a>
+
+</footer>
 
 <script language="javascript" type="text/javascript" src="js/main.js"></script>
 
+
 </body>
+
 </html>
