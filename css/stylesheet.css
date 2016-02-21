@@ -3,6 +3,10 @@ body {
     width: 100%;
 }
 
+html, body {
+    height: 100%;
+}
+
 .circular {
     width: 300px;
     height: 300px;
@@ -40,15 +44,13 @@ body {
 }
 
 #faehigkeiten {
-    background: url("../img/wolke.jpg ") no-repeat center center; background-size: cover;
+    background: url("../img/wolke2.jpg ") no-repeat center center; background-size: cover;
 }
 
 .portfolio {
     padding-bottom: 50px;
 
 }
-
-
 
 .circular img {
     width: 100%;
@@ -63,10 +65,8 @@ body {
 }
 */
 
-
-
 #footer {
-    bottom:0px;
+    bottom: 0;
     text-align:center;
     width:100%;
     background-color: lightgrey;
@@ -78,19 +78,53 @@ body {
     text-decoration: none;
 }
 
-
-
 #hallo {
-    font-family: "Perpetua Titling MT";
+    font-family: "Perpetua Titling MT", serif;
     color: white;
     font-size: 25px;
 }
 
 #haupttext {
-    font-family: Perpetua;
+    font-family: Perpetua, serif;
     color: white;
     font-size: 22px;
     width: auto;
+}
+
+.kontaktBild {
+    height: 170px;
+    background-image: url("../img/blueten2.jpg");
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.kontaktText, .impressumText {
+    padding-left: 50px;
+}
+
+#kontakt {
+    color: deepskyblue;
+}
+
+.impressum, .kontakt {
+    padding-top: 50px;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    display: block;
+}
+
+.fill {
+    min-height: 100%;
+    height: 100%;
+}
+
+.impressumBild {
+    height: 170px;
+    background-image: url("../img/dawn2.jpg");
+    width: 100%;
+    margin-bottom: 50px;
 }
 
 .table-responsive {
@@ -248,11 +282,6 @@ body {
 
 
 
-
-
-body {
-    margin: 30px 0px;
-}
 .progress {
     position: relative;
     height: 25px;
