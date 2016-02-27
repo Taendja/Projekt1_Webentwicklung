@@ -35,6 +35,8 @@ html, body {
 #h2lebenslauf, #h2faehigkeiten, #h2portfolio {
     padding-top: 40px;
     padding-bottom: 40px;
+    font-family: "Fredericka the Great", "Perpetua Titling MT", serif;
+    text-shadow: 10px 8px 20px #0f0f0f;
 }
 
 .faehigkeiten{
@@ -44,7 +46,7 @@ html, body {
 }
 
 #faehigkeiten {
-    background: url("../img/wolke2.jpg ") no-repeat center center; background-size: cover;
+    background: url("../img/wolke.jpg ") no-repeat center center; background-size: cover;
 }
 
 .portfolio {
@@ -74,14 +76,15 @@ html, body {
 }
 
 #footer a {
-    color: black;
+    color: gray;
     text-decoration: none;
 }
 
 #hallo {
-    font-family: "Perpetua Titling MT", serif;
+    font-family: "Fredericka the Great", "Perpetua Titling MT", serif;
     color: white;
     font-size: 25px;
+    text-shadow: 10px 8px 10px #0f0f0f;
 }
 
 #haupttext {
@@ -93,7 +96,7 @@ html, body {
 
 .kontaktBild {
     height: 170px;
-    background-image: url("../img/blueten2.jpg");
+    background-image: url("../img/blueten.jpg");
     width: 100%;
     margin-bottom: 50px;
 }
@@ -122,7 +125,7 @@ html, body {
 
 .impressumBild {
     height: 170px;
-    background-image: url("../img/dawn2.jpg");
+    background-image: url("../img/dawn.jpg");
     width: 100%;
     margin-bottom: 50px;
 }
