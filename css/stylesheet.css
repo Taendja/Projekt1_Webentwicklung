@@ -4,24 +4,6 @@ body {
     overflow-y: scroll;
 }
 
-.backdivImpressum{
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    background-color: #2e6da4;
-    width: 100%;
-    height: 100%;
-}
-
-.backdivKontakt{
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    background-color: mistyrose;
-    width: 100%;
-    height: 100%;
-}
-
 .inner{
     position: relative;
 }
@@ -84,8 +66,27 @@ body {
 }
 
 /*Kontakt & Impressum*/
+.backdiv{
+    position: absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+    background-color: #2e6da4;
+}
+
+.backdiv2{
+    position: absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+    background-color: mistyrose;
+}
+
 .fill {
-    height: 100%;
+    position: relative;
+    height: 100vh;
 }
 
 .kontaktBild {
@@ -119,6 +120,12 @@ body {
 }
 
 /*Footer*/
+.footerouter{
+    position: absolute;
+    bottom:0px;
+    width: 100%;
+}
+
 .footer {
     position: relative;
     background-color: lightgrey;
@@ -134,22 +141,6 @@ body {
 }
 
 .footer a {
-    color: gray;
-    text-decoration: none;
-    padding-right:25px;
-    padding-left:25px;
-}
-
-.footer2{
-    position: absolute;
-    bottom: 0px;
-    z-index: 999;
-    background-color: lightgrey;
-    width: 100%;
-    height: auto;
-}
-
-.footer2 a {
     color: gray;
     text-decoration: none;
     padding-right:25px;
