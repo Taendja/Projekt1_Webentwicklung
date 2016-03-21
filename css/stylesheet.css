@@ -90,17 +90,31 @@ body {
 }
 
 .kontaktBild {
+    position: relative;
     height: 170px;
     background-image: url("../img/petals.jpg");
-    width: 100%;
-    margin-bottom: 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
 }
 
 .kontaktText, .impressumText {
-    padding-left: 50px;
+    margin: auto;
+    height: auto;
+    width: 100%;
 }
 
-#kontakt {
+.kontaktText p, .impressumText p{
+    margin: 0px;
+}
+
+#h1impressum, #h1kontakt {
+    font-size: 25px;
+}
+
+#h1kontakt {
     color: deepskyblue;
 }
 
@@ -113,10 +127,14 @@ body {
 }
 
 .impressumBild {
+    position: relative;
     height: 170px;
     background-image: url("../img/dawn.jpg");
-    width: 100%;
-    margin-bottom: 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
 }
 
 /*Footer*/
