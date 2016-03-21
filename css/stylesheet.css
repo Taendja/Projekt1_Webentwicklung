@@ -20,7 +20,7 @@ body {
     background-color: deepskyblue;
 }
 
-#hallo {
+#welcome {
     font-family: "Fredericka the Great", "Perpetua Titling MT", serif;
     color: white;
     font-size: 25px;
@@ -35,7 +35,7 @@ body {
     font-size: 22px;
 }
 
-.table-responsive {
+.table {
     color: white;
     font-size: 18px;
 }
@@ -48,7 +48,7 @@ body {
 }
 
 .faehigkeiten{
-    background: url("../img/wolke.jpg ") no-repeat center center; background-size: cover;
+    background: url("../img/clouds.jpg ") no-repeat center center; background-size: cover;
     color: white;
     padding-bottom: 50px;
 }
@@ -91,7 +91,7 @@ body {
 
 .kontaktBild {
     height: 170px;
-    background-image: url("../img/blueten.jpg");
+    background-image: url("../img/petals.jpg");
     width: 100%;
     margin-bottom: 50px;
 }
