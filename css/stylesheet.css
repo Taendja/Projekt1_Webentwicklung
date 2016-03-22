@@ -91,7 +91,7 @@ body {
 
 .kontaktBild {
     position: relative;
-    height: 170px;
+    height: 15%;
     background-image: url("../img/petals.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -128,7 +128,7 @@ body {
 
 .impressumBild {
     position: relative;
-    height: 170px;
+    height: 15%;
     background-image: url("../img/dawn.jpg");
     background-repeat: no-repeat;
     background-size: cover;
